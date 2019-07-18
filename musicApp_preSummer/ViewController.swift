@@ -7,13 +7,29 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 class ViewController: UIViewController {
+    
+    var aoudioPlayer: AVAudioPlayer!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    @IBAction func maryGold() {
+        
+    }
+    
+    func setSound(soundName: String, type: String) {
+        
+        let soundFile = Bundle.main.path(forResource: soundName, ofType: type)
+    }
+    
+    
 
 
 }
